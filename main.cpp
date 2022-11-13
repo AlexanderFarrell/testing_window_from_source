@@ -1,11 +1,13 @@
 #include <iostream>
 
 // MAC
-#include <OpenGL/gl3.h>
+//#include <OpenGL/gl3.h>
 
 // LINUX
-//#include <GL/gl.h>
+//#include "gl/gl.h"
+#include <GL/gl.h>
 
+//#include <glad/glad.h>
 #include <SDL.h>
 #include <glm/glm.hpp>
 
@@ -55,8 +57,9 @@ int main() {
                     break;
             }
         }
-        glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+        glFlush();
         SDL_GL_SwapWindow(window);
     }
     SDL_GL_DeleteContext(gl);
