@@ -1,11 +1,11 @@
 #include <iostream>
 
 // MAC
-//#include <OpenGL/gl3.h>
+#include <OpenGL/gl3.h>
 
 // LINUX
 //#include "gl/gl.h"
-#include <GL/gl.h>
+//#include <GL/gl.h>
 
 //#include <glad/glad.h>
 #include <SDL.h>

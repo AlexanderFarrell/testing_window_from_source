@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 add_subdirectory(external/sdl2)
 add_subdirectory(external/glm)
 
-set (CMAKE_EXE_LINKER_FLAGS "-lGL" )
+#set (CMAKE_EXE_LINKER_FLAGS "-lGL" )
 if (WIN32)
     add_subdirectory(external/glad)
 elseif(APPLE)
